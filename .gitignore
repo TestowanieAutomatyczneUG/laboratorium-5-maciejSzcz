@@ -1,2 +1,4 @@
 __pycache__
 .pytest_cache
+src/zad1/__pycache__
+src/zad1/.pytest_cache
