@@ -11,11 +11,11 @@ class HammingTest(unittest.TestCase):
     def test_single_letter_different_strands(self):
         self.assertEqual(Hamming.distance("G", "T"), 1)
 
-    @unittest.skip("not implemented")
+
     def test_long_identical_strands(self):
         self.assertEqual(Hamming.distance("GGACTGAAATCTG", "GGACTGAAATCTG"), 0)
 
-    @unittest.skip("not implemented")
+
     def test_long_different_strands(self):
         self.assertEqual(Hamming.distance("GGACGGATTCTG", "AGGACGGATTCT"), 9)
 

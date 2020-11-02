@@ -1,8 +1,11 @@
 class Hamming:
     def distance(first, second):
+        result = 0
+
         if first == "" or second == "":
-            return 0
-        elif len(first) == 1 and first == second:
-            return 0
-        elif len(first) == 1 and len(second) == 1:
-            return 1
+            result = 0    
+        
+        for i in range(len(first)):
+            if first[i] != second[i]:
+                result += 1
+        return result
