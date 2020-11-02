@@ -1,4 +1,15 @@
-__pycache__
-.pytest_cache
-src/zad1/__pycache__
-src/zad1/.pytest_cache
+# general things to ignore
+build/
+dist/
+*.egg-info/
+*.egg
+*.py[cod]
+__pycache__/
+*.so
+*~
+*.pytest_cache
+
+
+# due to using tox and pytest
+.tox
+.cache
