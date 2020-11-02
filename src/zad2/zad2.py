@@ -1,2 +1,4 @@
 def roman(romanLetters):
-    return 0
+    if romanLetters == "I":
+        return 1
+    
