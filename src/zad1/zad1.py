@@ -2,7 +2,7 @@ class Hamming:
     def distance(first, second):
         result = 0
 
-        if first == "" or second == "":
+        if first == "" and second == "":
             return 0
         elif len(first) != len(second):
             raise ValueError("the length of the strands is different")
