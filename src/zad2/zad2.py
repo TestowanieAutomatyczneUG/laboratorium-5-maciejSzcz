@@ -1,4 +1,3 @@
-def roman(romanLetters):
-    if romanLetters == "I":
-        return 1
-    
+def roman(letters):
+    if letters == 1:
+        return "I"
