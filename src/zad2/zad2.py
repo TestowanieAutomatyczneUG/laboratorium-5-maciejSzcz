@@ -3,3 +3,5 @@ def roman(letters):
         return "I"
     elif letters == 2:
         return "II"
+    elif letters == 3:
+        return "III"
