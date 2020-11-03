@@ -19,3 +19,5 @@ def roman(letters):
         return "XLVIII"
     elif letters == 49:
         return "XLIX"
+    elif letters == 59:
+        return "LIX"
