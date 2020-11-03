@@ -10,7 +10,7 @@ class Song:
         elif number > len(self.song):
             raise ValueError("Value can't be bigger than song length")
         
-        return ''
+        return self.song[number-1]
 
     def betweenLines(self, start, end):
         return []
