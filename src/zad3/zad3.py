@@ -13,6 +13,8 @@ class Song:
         return self.song[number-1]
 
     def betweenLines(self, start, end):
+        if start < 0 or end < 0:
+            raise ValueError("Value can't be negative")
         return self.song[start-1:end]
 
     def wholeSong(self):
