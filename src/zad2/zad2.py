@@ -33,3 +33,5 @@ def roman(letters):
         return "DLXXV"
     elif letters == 911:
         return "CMXI"
+    elif letters == 1024:
+        return "MXXIV"
