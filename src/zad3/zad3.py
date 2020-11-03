@@ -19,6 +19,8 @@ class Song:
             raise ValueError("Value can't be negative")
         elif end < start:
             raise ValueError("Second value can't be bigger than the first one")
+        elif start > len(self.song) or end > len(self.song):
+            raise ValueError("Values can't be bigger than the songs length")
 
         return self.song[start-1:end]
 
