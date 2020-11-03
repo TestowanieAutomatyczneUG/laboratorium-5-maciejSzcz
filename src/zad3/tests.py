@@ -39,7 +39,6 @@ class TestSong(unittest.TestCase):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.betweenLines("3", 9)
 
-    @unittest.skip('not implemented')
     def test_print_betweenLines_disallow_out_of_range_values(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.betweenLines(7, 16)
