@@ -20,7 +20,6 @@ class TestSong(unittest.TestCase):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.line("14")
 
-    @unittest.skip('not implemented')
     def test_print_betweenLines_2_4(self):
         self.assertEqual(self.temp.betweenLines(2, 4), ['On the second day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree.', 'On the third day of Christmas my true love gave to me: three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.', 'On the fourth day of Christmas my true love gave to me: four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.'])
 
