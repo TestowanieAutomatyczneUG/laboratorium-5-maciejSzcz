@@ -15,6 +15,9 @@ class Song:
     def betweenLines(self, start, end):
         if start < 0 or end < 0:
             raise ValueError("Value can't be negative")
+        elif end < start:
+            raise ValueError("Second value can't be bigger than the first one")
+
         return self.song[start-1:end]
 
     def wholeSong(self):
