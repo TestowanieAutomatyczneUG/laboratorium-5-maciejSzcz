@@ -8,7 +8,6 @@ class TestSong(unittest.TestCase):
     def test_print_line_1(self):
         self.assertEqual(self.temp.line(1), 'On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.')
 
-    @unittest.skip('not implemented')
     def test_print_line_disallow_negative_value(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.line(-1)
