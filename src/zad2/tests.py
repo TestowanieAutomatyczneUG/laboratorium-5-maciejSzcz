@@ -35,7 +35,6 @@ class RomanNumeralsTest(unittest.TestCase):
     def test_50_is_a_single_l(self):
         self.assertEqual(roman(59), "LIX")
 
-    @unittest.skip("not implemented")
     def test_90_being_100_10_is_xc(self):
         self.assertEqual(roman(93), "XCIII")
 
