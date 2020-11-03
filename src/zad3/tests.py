@@ -16,7 +16,6 @@ class TestSong(unittest.TestCase):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.line(132)
 
-    @unittest.skip('not implemented')
     def test_print_line_disallow_non_integer_value(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.line("14")
