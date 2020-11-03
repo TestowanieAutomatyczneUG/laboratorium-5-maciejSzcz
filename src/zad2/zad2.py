@@ -9,3 +9,5 @@ def roman(letters):
         return "IV"
     elif letters == 5:
         return "V"
+    elif letters == 6:
+        return "VI"
