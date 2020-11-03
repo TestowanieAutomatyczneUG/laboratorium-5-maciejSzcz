@@ -47,7 +47,6 @@ class RomanNumeralsTest(unittest.TestCase):
     def test_400_being_500_100_is_cd(self):
         self.assertEqual(roman(402), "CDII")
 
-    @unittest.skip("not implemented")
     def test_500_is_a_single_d(self):
         self.assertEqual(roman(575), "DLXXV")
 
