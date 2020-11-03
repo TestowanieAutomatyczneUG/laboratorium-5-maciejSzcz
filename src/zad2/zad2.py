@@ -1,39 +1,16 @@
 def roman(letters):
-    if letters == 1:
-        return "I"
-    elif letters == 2:
-        return "II"
-    elif letters == 3:
-        return "III"
-    elif letters == 4:
-        return "IV"
-    elif letters == 5:
-        return "V"
-    elif letters == 6:
-        return "VI"
-    elif letters == 9:
-        return "IX"
-    elif letters == 27:
-        return "XXVII"
-    elif letters == 48:
-        return "XLVIII"
-    elif letters == 49:
-        return "XLIX"
-    elif letters == 59:
-        return "LIX"
-    elif letters == 93:
-        return "XCIII"
-    elif letters == 141:
-        return "CXLI"
-    elif letters == 163:
-        return "CLXIII"
-    elif letters == 402:
-        return "CDII"
-    elif letters == 575:
-        return "DLXXV"
-    elif letters == 911:
-        return "CMXI"
-    elif letters == 1024:
-        return "MXXIV"
-    elif letters == 3000:
-        return "MMM"
+    values = [
+            1000, 900, 500, 400,
+            100, 90, 50, 40,
+            10, 9, 5, 4,
+            1
+            ]
+    symbols = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
+    roman = ''
+    i = 0
+    while letters > 0:
+        for _ in range(letters // values[i]):
+            roman += symbols[i]
+            letters -= values[i]
+        i += 1
+    return roman
