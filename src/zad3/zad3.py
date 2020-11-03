@@ -13,7 +13,9 @@ class Song:
         return self.song[number-1]
 
     def betweenLines(self, start, end):
-        if start < 0 or end < 0:
+        if type(start) != int or type(end) != int:
+            raise ValueError("Values have to be an integer")
+        elif start < 0 or end < 0:
             raise ValueError("Value can't be negative")
         elif end < start:
             raise ValueError("Second value can't be bigger than the first one")
