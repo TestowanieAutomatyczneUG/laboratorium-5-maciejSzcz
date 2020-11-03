@@ -27,10 +27,9 @@ class TestSong(unittest.TestCase):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.betweenLines(-1, -4)
         
-    @unittest.skip('not implemented')
-    def test_print_betweenLines_disallow_empty_values(self):
+    def test_print_betweenLines_disallow_negative_second_value(self):
         with self.assertRaisesWithMessage(ValueError):
-            self.temp.betweenLines(3)
+            self.temp.betweenLines(4, -176)
 
     @unittest.skip('not implemented')
     def test_print_betweenLines_disallow_first_value_being_bigger_than_second(self):
