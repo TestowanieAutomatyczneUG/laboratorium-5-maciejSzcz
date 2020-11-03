@@ -13,7 +13,7 @@ class Song:
         return self.song[number-1]
 
     def betweenLines(self, start, end):
-        return []
+        return self.song[start-1:end]
 
     def wholeSong(self):
         return []
