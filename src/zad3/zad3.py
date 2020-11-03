@@ -25,4 +25,4 @@ class Song:
         return self.song[start-1:end]
 
     def wholeSong(self):
-        return []
+        return self.song
