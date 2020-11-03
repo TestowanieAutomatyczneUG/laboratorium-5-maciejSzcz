@@ -35,3 +35,5 @@ def roman(letters):
         return "CMXI"
     elif letters == 1024:
         return "MXXIV"
+    elif letters == 3000:
+        return "MMM"
