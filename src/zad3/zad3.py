@@ -4,7 +4,9 @@ class Song:
 
     def line(self, number):
         if number < 0:
-            raise ValueError("value can't be negative")
+            raise ValueError("Value can't be negative")
+        elif number > len(self.song):
+            raise ValueError("Value can't be bigger than song length")
         
         if number == 1:
             return self.song[0]

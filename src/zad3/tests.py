@@ -12,7 +12,6 @@ class TestSong(unittest.TestCase):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.line(-1)
     
-    @unittest.skip('not implemented')
     def test_print_line_disallow_out_of_range_value(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.line(132)
